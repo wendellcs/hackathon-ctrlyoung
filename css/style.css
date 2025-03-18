@@ -3,10 +3,11 @@
 
 body{
     background-color: #2C2C2C;
+    text-align: center;
 }
 header {
     background-color: #555555;
-    color: wheat;
+    color: white;
 }
 
 menu{
