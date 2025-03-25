@@ -7,10 +7,12 @@ body{
 header{
     background-color: #555555;
     color: white;
+
 }
 
 main{
     color: white;
+    justify-self: center;
 }
 
 #menu{
