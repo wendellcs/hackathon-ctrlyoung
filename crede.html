@@ -32,11 +32,8 @@
             <p>Ao atrasar o pagamento do crédito, é preciso pagar juros de mora e multa. </p>
         </div>
         <div>
-            <h2>Juros Composto</h2>
-            <p> juros compostos são calculados sobre o valor total + juros simples cobrados sobre ele. Quando você contrata algum serviço financeiro que tem a taxa de juros calculada por juros simples, é possível saber exatamente qual valor de juros vai pagar até o fim das parcelas definidas.</p>
-            <h3>Cálculo Juros Composto</h3>
-            <p>O cálculo do juros composto é dado por esta fórmula:</p> 
-            <p><strong>M = C (1 + i)^t<!-- o termo "^" siginifica elevado --></strong></p>
+            <h2>Juros simples</h2>
+            <p>Juros simples são os acréscimos feitos a um capital ao longo do tempo. São calculados com base no valor inicial (capital), na taxa de juros e no tempo.</p>
             <p>Cada uma dessas letras é um importante conceito da matemática financeira:</p>
             <ul>
                 <li><strong>Capital (C)</strong>: é o primeiro valor investido. Conhecemos como capital o valor inicial da negociação, ou seja, ele é o valor de referência para calcularmos os juros com o passar do tempo</li>
@@ -44,9 +41,58 @@
                 <li><strong>Taxa de juros (i)</strong>: é a porcentagem cobrada em cima do capital a cada instante. Essa taxa pode ser ao dia (a.d.), ao mês (a.m.), ao bimestre (a.b.) ou ao ano (a.a.). A taxa de juros é uma porcentagem geralmente representada na forma percentual, porém, para calcular-se o juros composto, é importante escrevê-la sempre na forma decimal.</li>
                 <li><strong>Tempo (t)</strong>: é o tempo em que o capital ficará aplicado. É importante que a taxa de juros (i) e o tempo (t) estejam sempre na mesma unidade de medida.</li>
                 <li><strong>Montante (M)</strong>: é o valor final da transação. O montante é calculado pela soma do capital com os juros <strong>M = C + J</strong>.</li>
-            </ul>            
-            <!--Aqui vai ficar uma section onde nela terà um comando Javascript para realizar o cálculo de Juros Composto-->
+            </ul>
+            <p>O cálculo de juros simples é dado por essa fórmula:</p>
+            <p><strong>J = (C * i * t) / 100</strong></p><!--Aqui podemos substituir por uma imgaem da fórmula assim como iremos fazer com o juros composto, para os dois ficarem iguais. Porque com imagem e o outro sem imagem ia ficar estranho-->        
+        </div>
+        <div>
+            <section>
+                <h2>Juros Simples</h2>
+                Capital:<input type="number" name="capital" id="capital" placeholder="Capital(C)">
+                Taxa:<input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
+                <select name="num" id="tipoTaxa">
+                    <option value="mes">ao mês</option>
+                    <option value="ano">ao ano</option>
+                </select>
+                Tempo:<input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
+                <select name="num" id="tipoTempo">
+                    <option value="mes">ao mês</option>
+                    <option value="ano">ao ano</option>
+                </select>
+                <input type="button" value="Calcular" onclick="Calcular()">
+                <div id="res">
+
+                </div>
+            </section>
+        </div>
+        <div>
+            <h2>Juros Composto</h2>
+            <p> juros compostos são calculados sobre o valor total + juros simples cobrados sobre ele. Quando você contrata algum serviço financeiro que tem a taxa de juros calculada por juros simples, é possível saber exatamente qual valor de juros vai pagar até o fim das parcelas definidas.</p>
+            <h3>Cálculo Juros Composto</h3>
+            <p><strong>M = C (1 + i)^t<!-- o termo "^" siginifica elevado --></strong></p>     
+            <p>Para descobrir o juros deve-se subtrair o valor da Capital(C) com o valor do MOntante(M)</p>     
+        </div>     
+        <div>
+            <section>
+                <h2>Juros compostos</h2>
+                Capital:<input type="number" name="num" id="capital2" placeholder="Capital(C)">
+                Taxa:<input type="number" name="num" id="taxa2" placeholder="Taxa(i)">
+                <select name="num" id="tipoTaxa2">
+                    <option value="mes2">ao mês</option>
+                    <option value="ano2">ao ano</option>
+                </select>
+                Tempo:<input type="number" name="num" id="tempo2" placeholder="Tempo(t)">
+                <select name="num" id="tipoTempo2">
+                    <option value="mes2">ao mês</option>
+                    <option value="ano2">ao ano</option>
+                </select>
+                <input type="button" value="Calcular" onclick="Composto()">
+                <div id="res2">
+
+                </div>
+            </section>
         </div>
     </main>
+    <script src="juros.js"></script>
 </body>
 </html>
