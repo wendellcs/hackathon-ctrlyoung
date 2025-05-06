@@ -13,6 +13,10 @@ body{
     box-shadow: 0px 3px 7px rgb(34, 34, 34);
 }
 
+p{
+    font-size: 14px;
+}
+
 .nav_bar{
     background-color: #5B5B5B;
     border-radius: 12px;
@@ -111,8 +115,14 @@ li{
     list-style: none;
 }
 
-ul{
-    display: flex
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.topico{
+    margin-left: 15px;
 }
 
 #conteudo-principal{
@@ -150,8 +160,9 @@ ul{
     margin-bottom: 15px;
 }
 
+
 .texto{
-    font-size: 16px;
+    font-size: 14px;
 }
 
 @media (max-width: 670px) {
