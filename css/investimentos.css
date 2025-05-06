@@ -1,0 +1,28 @@
+@media (max-width: 670px) {
+    .menu-toggle {
+        display: block;
+      }
+    
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color:#5B5B5B;
+        position: absolute;
+        top: 50px;
+        left: 0;
+      }
+
+      .header-links {
+        display: none;
+      }
+    
+      .nav-links.active {
+        display: flex;
+      }
+    
+      .nav-links li {
+        border-top: 1px solid #555;
+      }
+     
+}
