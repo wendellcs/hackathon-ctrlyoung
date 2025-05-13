@@ -5,6 +5,7 @@ body{
     background-color: #2f2f2f;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    position: relative;
 }
 
 
@@ -224,7 +225,8 @@ aside {
 #chatbot {
     position: absolute;
     padding: 20px;
-    transform: translateY(100px);
+    right: 10px;
+    bottom: 10px;
 }
 
 @media (max-width: 670px) {
