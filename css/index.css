@@ -2,7 +2,7 @@
 
 
 body{
-    /* background-color: #2f2f2f; */
+    background-color: #2f2f2f;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -150,7 +150,8 @@ li{
 }
 
 .banner {
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     margin: 0 auto;
     display: block;
 }
@@ -209,8 +210,21 @@ li{
 .titulo-da-lista:not(:first-of-type){
     margin-top: 20px;
 }
+aside {
+    background-color: #555;
+    position: absolute;
+    width: 200px;
+    height: 350px;
+    padding: 20px;
+    margin: 10px;
+}
 #rodape{
     background-color: #2A2A28;
+}
+#chatbot {
+    position: absolute;
+    padding: 20px;
+    transform: translateY(100px);
 }
 
 @media (max-width: 670px) {
@@ -239,6 +253,8 @@ li{
       .nav-links li {
         border-top: 1px solid #555;
       }
+
+
 
       
      
