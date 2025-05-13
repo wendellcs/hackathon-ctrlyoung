@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+<title>MoneeBot</title>
+<link rel="stylesheet" href="../css/chatbot.css" />
+</head>
+<body>
+  <div id="chatbot-container" role="main" aria-label="MoneeBot">
+    <header>MoneeBot</header>
+    <div id="chat-window" aria-live="polite" aria-atomic="false"></div>
+    <form id="input-area" aria-label="Área de entrada de mensagem">
+      <input type="text" id="user-input" autocomplete="off" aria-label="Digite sua pergunta ou mensagem" placeholder="Digite sua mensagem..." required />
+      <button type="submit" id="send-btn" aria-label="Enviar mensagem">Enviar</button>
+    </form>
+  </div>
+<script src="../scripts/chatbot.js"></script>
+</body>
+</html>
+
