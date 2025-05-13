@@ -5,9 +5,8 @@ body{
     /* background-color: #2f2f2f; */
     color: black;
     font-family: Arial, Helvetica, sans-serif;
-    background: #242424;
-    background: linear-gradient(180deg, rgba(36, 36, 36, 1) 0%, rgba(47, 47, 47, 1) 50%, rgba(74, 74, 74, 1) 100%);
 }
+
 
 .nav_logo{
     background-color: #F3C64A;
@@ -123,6 +122,18 @@ li{
     gap: 10px;
 }
 
+.orçamento {
+    padding: 10px;
+}
+
+.subtitulo {
+    color: #F3C64A;
+}
+
+.titulo-de-topico {
+    color: #F3C64A;
+}
+
 .topico{
     margin-left: 15px;
 }
@@ -228,5 +239,7 @@ li{
       .nav-links li {
         border-top: 1px solid #555;
       }
+
+      
      
 }
