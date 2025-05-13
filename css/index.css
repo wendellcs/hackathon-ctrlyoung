@@ -228,6 +228,14 @@ aside {
     right: 10px;
     bottom: 10px;
 }
+.titulo-de-topico + div ul li {
+    margin: 10px 0 ;
+}
+
+.link {
+    color: #FFF;
+    text-decoration: underline;
+}
 
 @media (max-width: 670px) {
     .menu-toggle {
