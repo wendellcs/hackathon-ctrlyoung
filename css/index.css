@@ -5,6 +5,7 @@ body{
     background-color: #2f2f2f;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
 }
 
 .nav_logo{
@@ -121,6 +122,18 @@ li{
     gap: 10px;
 }
 
+.orçamento {
+    padding: 10px;
+}
+
+.subtitulo {
+    color: #F3C64A;
+}
+
+.titulo-de-topico {
+    color: #F3C64A;
+}
+
 .topico{
     margin-left: 15px;
 }
@@ -191,5 +204,7 @@ li{
       .nav-links li {
         border-top: 1px solid #555;
       }
+
+      
      
 }
