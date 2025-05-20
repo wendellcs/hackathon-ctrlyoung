@@ -105,29 +105,38 @@ header {
     align-items: flex-start;
 }
 
+.conteiner-principais-topicos {
+    background-color: #2A2A28;
+    padding: 15px 10px;
+    border: 1px solid #F3C64A;
+    border-radius: 12px;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.conteiner-introducao {
+    text-align: center;
+    margin: 50px 0;
+}
+
 .imagem-index {
     width: 300px;
     margin-right: 20px;
 }
 
 #section-list {
-    border: 1px solid transparent;
-    background-color: #2f2f2f;
+    border: 1px solid #F3C64A;
+    background-color: #2A2A28;
     padding: 10px;
     width: 300px;
     border-radius: 10px;
 }
 
-#section-list:hover {
-    border: 1px solid #F3C64A;
-    transition-duration: 0.5s;
-}
 
 .section {
     color: white;
-    line-height: 20px;
     border: 1px solid #787878;
-    padding: 5px;
+    padding: 10px 5px;
     display: block;
     width: 100%;
     box-sizing: border-box;
@@ -246,14 +255,7 @@ li{
 .titulo-da-lista:not(:first-of-type){
     margin-top: 20px;
 }
-aside {
-    background-color: #555;
-    position: absolute;
-    width: 200px;
-    height: 350px;
-    padding: 20px;
-    margin: 10px;
-}
+
 #rodape{
     background-color: #2A2A28;
 }
@@ -286,6 +288,11 @@ aside {
     text-decoration: underline;
 }
 
+.link:hover, .section:hover {
+    color: #F3C64A 
+}
+
+
 footer {
     background-color: rgb(39, 39, 39);
     color: white;
@@ -298,17 +305,15 @@ footer {
 
 .footer-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
     gap: 40px;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .footer-section {
-    flex: 1;
-    min-width: 200px;
+    margin-left: auto;
 }
 
 .footer-section h3 {
@@ -368,13 +373,13 @@ footer > ul > li {
 
 #botao-cima {
     padding: 10px 20px;
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
     font-size: 16px;
     cursor: pointer;
     background-color: black;
     color: white;
-    position: absolute;
-    right: 10px;
-    bottom: 10px;
 }
 
 @media (max-width: 670px) {

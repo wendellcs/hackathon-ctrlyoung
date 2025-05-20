@@ -35,39 +35,47 @@
     </header>
     <main id="conteudo-principal">
         <img class="banner" src="./imagens/title.png" alt="imagem banner">
-        <h1 id="titulo-principal"> Mostre O Novo Entendimento Econimico para o Futuro</h1>
+        <h1 id="titulo-principal"> Mostre O Novo Entendimento Econômico para o Futuro</h1>
         
         <div class="conteudo">
-            <h2 class="subtitulo">O que é a educação financeira?</h2>
-            <p class="texto">A educação financeira e o processo de aprender a gerir o dinheiro de forma consciente e inteligente. É importante para tomar decisões financeiras responsáveis e estratégicas.</p>
-            <h2 class="subtitulo">Qual é a utilidade de se aprender a educação financeira?</h2>
-            <h3 class="titulo-de-topico">Principais Tópicos</h3>
-            <div>
-                <ul>
-                    <li><a href="#beneficios" class="link"> Beneficios da educação financeira.</a></li>
-                    <li><a href="#mentalidade-financeira" class="link"> Mentalidade financeira saudável</a></li>
-                    <li><a href="#controle-gastos" class="link"> Orçamento e controle de gastos </a></li>
-                </ul>
-            </div> <br>
-            <div class="container">
-                <img src="" alt="Imagem do index" class="imagem-index">
-                <section id="section-list">
-                <h3 class="titulo-de-topico">Links internos e externos para sites sobre Educação Financeira</h3>
+            <div class="conteiner-introducao">
+                <h2 class="subtitulo">O que é a educação financeira?</h2>
+                <p class="texto">A educação financeira e o processo de aprender a gerir o dinheiro de forma consciente e inteligente. É importante para tomar decisões financeiras responsáveis e estratégicas.</p>
+            </div>
+            <div class="conteiner-principais-topicos">
+                <h3 class="titulo-de-topico">Principais Tópicos</h3>
+                <div>
                     <ul>
-                <li><a href="index.html" class="section">Home</a></li>
-                <li><a href="./paginas/investimentos.html" class="section" target="_blank">Investimentos</a></li>
-                <li><a href="./paginas/crede.html" class="section" target="_blank">Créditos e Dívidas</a></li>
-                <li><a href="./paginas/jovens.html" class="section" target="_blank">Educação Financeira para Jovens</a></li>
-                <li><a href="./paginas/futuro.html" class="section" target="_blank">Planejamento para o Futuro</a></li>
-                <li><a href="https://www.caixa.gov.br/educacao-financeira/Paginas/default.aspx" class="section" target="_blank">Educação Financeira | Caixa</a></li>
-                <li><a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/desenrola-brasil/educacao-financeira" class="section" target="_blank">Educação Financeira | Governo Federal</a></li>
-                <li><a href="https://www.sicredi.com.br/site/educacaofinanceira/" class="section" target="_blank">Educação Financeira | Sicredi</a></li>
-                <li><a href="https://meubolsoemdia.com.br/" class="section" target="_blank">Educação Financeira | Meu Bolso em Dia</a></li>
-                <li><a href="https://www.itau.com.br/educacao-financeira" class="section" target="_blank">Educação Financeira | Itaú</a></li>
+                        <li><a href="#beneficios" class="link"> Beneficios da educação financeira.</a></li>
+                        <li><a href="#mentalidade-financeira" class="link"> Mentalidade financeira saudável</a></li>
+                        <li><a href="#controle-gastos" class="link"> Orçamento e controle de gastos </a></li>
                     </ul>
+                </div> 
+            </div>
+
+            <div class="container">
+                <img src="#" alt="Imagem do index" class="imagem-index">
+                <section id="section-list">
+
+                <h3 class="titulo-de-topico">Links</h3>
+                <ul>
+                    <li><a href="index.html" class="section">Home</a></li>
+                    <li><a href="./paginas/investimentos.html" class="section" target="_blank">Investimentos</a></li>
+                    <li><a href="./paginas/crede.html" class="section" target="_blank">Créditos e Dívidas</a></li>
+                    <li><a href="./paginas/jovens.html" class="section" target="_blank">Educação Financeira para Jovens</a></li>
+                    <li><a href="./paginas/futuro.html" class="section" target="_blank">Planejamento para o Futuro</a></li>
+                </ul>
+                <h3 class="titulo-de-topico">Saiba mais</h3>
+                <ul>
+                    <li><a href="https://www.caixa.gov.br/educacao-financeira/Paginas/default.aspx" class="section" target="_blank">Educação Financeira | Caixa</a></li>
+                    <li><a href="https://www.gov.br/fazenda/pt-br/acesso-a-informacao/acoes-e-programas/desenrola-brasil/educacao-financeira" class="section" target="_blank">Educação Financeira | Governo Federal</a></li>
+                    <li><a href="https://www.sicredi.com.br/site/educacaofinanceira/" class="section" target="_blank">Educação Financeira | Sicredi</a></li>
+                    <li><a href="https://meubolsoemdia.com.br/" class="section" target="_blank">Educação Financeira | Meu Bolso em Dia</a></li>
+                    <li><a href="https://www.itau.com.br/educacao-financeira" class="section" target="_blank">Educação Financeira | Itaú</a></li>
+                </ul>
                 </section>
             </div>
-            <h2 class="subtitulo">Porque é importante?</h2>
+            <h2 class="subtitulo">Porque educação financeira é tão importante?</h2>
             <p>A educação financeira é importante porque ajuda a gerir o dinheiro de forma eficaz, a tomar decisões informadas e a evitar dívidas</p>
             <h3 class="titulo-de-topico" id="beneficios">Benefícios da educação financeira:</h3>
             <div>
@@ -157,24 +165,8 @@
     <script src="./scripts/retrato.js"></script>
 
     <footer id="rodape'">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="botao-cima">↑</button>
         <div class="footer-container">
-            <div class="footer-section">
-                <h3>Contato</h3>
-                <ul>
-                    <li>
-                        Felipe D.
-                    </li>
-                    <li>
-                        <a href="https://github.com/Henry-Fernandes" class="link-footer">Henry F.</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/bernardcsilva" class="link-footer">Bernado C.</a>
-                    </li>
-                    <li>
-                        Francisco Z.
-                    </li>
-                </ul>
-            </div>
             <div class="footer-logo">
                 <img src="imagens/title.png" alt="Logo Footer" class="footer-logo">
             </div>
@@ -188,10 +180,10 @@
                 </ul>
             </div>
         </div>
+
         <div class="footer-bottom">
             <p>&copy; Site criado por Bernardo C., Henry F., Felipe D. e Francisco Z. para o projeto Hackaton. Todos os direitos reservados.</p>
         </div>
-        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="botao-cima">↑</button>
     </footer>
     
 </body>
