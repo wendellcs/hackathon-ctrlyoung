@@ -57,21 +57,34 @@
         <div>
             <section>
                 <h2 class="subtitulo">Juros Simples</h2>
-                Capital:<input type="number" name="capital" id="capital" placeholder="Capital(C)">
-                Taxa:<input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
-                <select name="num" id="tipoTaxa">
-                    <option value="mes">ao mês</option>
-                    <option value="ano">ao ano</option>
-                </select>
-                Tempo:<input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
-                <select name="num" id="tipoTempo">
-                    <option value="mes">ao mês</option>
-                    <option value="ano">ao ano</option>
-                </select>
-                <input type="button" value="Calcular" onclick="Calcular()">
-                <div id="res">
+                <div class="caixa">
+                    <label for="capital">Capital</label>
+                    <input type="number" name="capital" id="capital" placeholder="Capital(C)">
+                </div>
+
+                <div class="caixa">
+                    <label for="taxa">Taxa</label>
+                    <input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
+
+                    <select name="num" id="tipoTaxa">
+                        <option value="mes">ao mês</option>
+                        <option value="ano">ao ano</option>
+                    </select>
 
                 </div>
+
+                <div class="caixa">
+                    <label for="tempo">Tempo</label>
+                    <input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
+
+                    <select name="num" id="tipoTempo">
+                        <option value="mes">ao mês</option>
+                        <option value="ano">ao ano</option>
+                    </select>
+                </div>
+               
+                <input type="button" value="Calcular" onclick="Calcular()">
+                <div id="res"></div>
             </section>
         </div>
         <div>
@@ -84,17 +97,31 @@
         <div>
             <section>
                 <h2 class="subtitulo">Juros compostos</h2>
-                Capital:<input type="number" name="num" id="capital2" placeholder="Capital(C)">
-                Taxa:<input type="number" name="num" id="taxa2" placeholder="Taxa(i)">
-                <select name="num" id="tipoTaxa2">
-                    <option value="mes2">ao mês</option>
-                    <option value="ano2">ao ano</option>
-                </select>
-                Tempo:<input type="number" name="num" id="tempo2" placeholder="Tempo(t)">
-                <select name="num" id="tipoTempo2">
-                    <option value="mes2">ao mês</option>
-                    <option value="ano2">ao ano</option>
-                </select>
+                <div class="caixa">
+                    <label for="capital2">Capital</label>
+                    <input type="number" name="num" id="capital2" placeholder="Capital(C)">
+                </div>
+
+                <div class="caixa">
+                    <label for="taxa2">Taxa</label>
+                    <input type="number" name="num" id="taxa2" placeholder="Taxa(i)">
+
+                    <select name="num" id="tipoTaxa2">
+                        <option value="mes2">ao mês</option>
+                        <option value="ano2">ao ano</option>
+                    </select>
+                </div>
+
+                <div class="caixa">
+                    <label for="tempo2">Tempo</label>
+                    <input type="number" name="num" id="tempo2" placeholder="Tempo(t)">
+
+                    <select name="num" id="tipoTempo2">
+                        <option value="mes2">ao mês</option>
+                        <option value="ano2">ao ano</option>
+                    </select>
+                </div>
+
                 <input type="button" value="Calcular" onclick="Composto()">
                 <div id="res2">
 
@@ -102,6 +129,28 @@
             </section>
         </div>
     </main>
+
+    <footer id="rodape'">
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="botao-cima">↑</button>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="../imagens/title.png" alt="Logo Footer" class="footer-logo">
+            </div>
+            <div class="footer-section">
+                <h3>Redes Sociais</h3>
+                <ul class="sociais">
+                    <li><a href="#" target="_blank"><i class="fab fa-instagram">Bernardo C.</i></a></li>
+                    <li><a href="https://www.instagram.com/henryfernandes06/" target="_blank"><i class="fab fa-instagram">Henry F.</i></a></li>
+                    <li><a href="https://www.instagram.com/Fpwxz_7/" target="_blank"><i class="fab fa-instagram">Felipe D.</i></a></li>
+                    <li><a href="https://www.instagram.com/franciscozimmermann_969/" target="_blank"><i class="fab fa-instagram">Francisco Z.</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; Site criado por Bernardo C., Henry F., Felipe D. e Francisco Z. para o projeto Hackathon. Todos os direitos reservados.</p>
+        </div>
+    </footer>
     <script src="../scripts/juros.js"></script>
 </body>
 </html>
