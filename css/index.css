@@ -8,25 +8,8 @@ body{
     position: relative;
 }
 
-
-.nav_logo{
-    background-color: #F3C64A;
-    border-radius: 15px;
-    box-shadow: 0px 3px 7px rgb(34, 34, 34);
-}
-
 p{
     font-size: 14px;
-}
-
-.nav_bar{
-    background-color: #5B5B5B;
-    border-radius: 12px;
-    box-shadow: 0px 3px 7px rgb(34, 34, 34);
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .menu-toggle{

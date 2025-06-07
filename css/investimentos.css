@@ -42,6 +42,17 @@ h4 {
   margin: 20px 0;
 }
 
-.link_yt {
-  color: rgb(93, 191, 236)
+.links-yt li {
+  color: #F3C64A;
+  margin-bottom: 20px;
+}
+
+.links-yt li a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  
+}
+
+.links-yt li a:hover {
+  color: #dfdfdfb4;
 }
