@@ -265,8 +265,14 @@ footer > ul > li {
     display: block;
     font-size: 16px;
     cursor: pointer;
-    background-color: black;
-    color: white;
+    background-color: transparent;
+    border: 1px  #F3C64A solid;
+    border-radius: 8px;
+    color: #F3C64A;
+}
+
+#botao-cima:hover {
+    background-color: rgba(150, 151, 151, 0.171);
 }
 
 #chatbot {
