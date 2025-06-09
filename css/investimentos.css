@@ -11,6 +11,7 @@
         position: absolute;
         top: 50px;
         left: 0;
+
       }
 
       .header-links {
@@ -41,6 +42,7 @@ h4 {
   margin: 20px 0;
 }
 
+<<<<<<< HEAD
 footer {
     background-color: rgb(39, 39, 39);
     color: white;
@@ -142,3 +144,19 @@ footer > ul > li {
     bottom: 10px;
 
 }
+=======
+.links-yt li {
+  color: #F3C64A;
+  margin-bottom: 20px;
+}
+
+.links-yt li a {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  
+}
+
+.links-yt li a:hover {
+  color: #dfdfdfb4;
+}
+>>>>>>> 1ed7d8ba92e6e05a745c0764b7a0d4036e2315a1
