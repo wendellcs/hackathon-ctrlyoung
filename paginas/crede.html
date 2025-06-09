@@ -9,15 +9,15 @@
 </head>
 <body>
     <header id="menu">
-        <img src="./imagens/moneef logo.png" alt="logo da barra de nav" class="nav_logo" height="50px"/>
+        <img src="/imagens/moneef logo.png" alt="logo da barra de nav" class="nav_logo" height="50px"/>
         <nav class="nav_bar">
             <div class="menu-toggle" id="menu-toggle">
                 ☰
             </div>
             <ul class="header-links">
-                <li><a href="index.html" class="header-link">Home</a></li>
-                <li><a href="./paginas/investimentos.html" class="header-link">Investimentos</a></li>
-                <li><a href="./paginas/crede.html" class="header-link">Créditos e Dívidas</a></li>
+                <li><a href="/index.html" class="header-link">Home</a></li>
+                <li><a href="/paginas/investimentos.html" class="header-link">Investimentos</a></li>
+                <li><a href="/paginas/crede.html" class="header-link">Créditos e Dívidas</a></li>
             </ul>
         </nav>
 
@@ -38,11 +38,11 @@
             <p>Crédito é o ato de pegar dinheiro emprestado, com a promessa de pagar de volta mais tarde, com juros ou taxas.</p> 
             <p>Existem diversos tipos de créditos, como:</p> <br>
             <ul>
-                <li>Cartão de crédito: Uma forma de empréstimo que permite fazer compras e pagar depois, na data de vencimento da fatura </li>
-                <li>Crédito pessoal: Um empréstimo que pode ser contratado pelo cartão de crédito ou diretamente com o banco </li>
-                <li>Financiamento: Um empréstimo de longo prazo para comprar um bem específico, como um carro ou uma casa </li>
-                <li>Crédito consignado: Um empréstimo em que as parcelas são descontadas diretamente do contracheque </li>
-                <li>Crédito do Trabalhador: Um empréstimo com juros mais baixos e prazo flexível para pagamento </li>
+                <li class="list-style"><strong>Cartão de crédito:</strong> Uma forma de empréstimo que permite fazer compras e pagar depois, na data de vencimento da fatura </li>
+                <li class="list-style"><strong>Crédito pessoal:</strong> Um empréstimo que pode ser contratado pelo cartão de crédito ou diretamente com o banco </li>
+                <li class="list-style"><strong>Financiamento:</strong> Um empréstimo de longo prazo para comprar um bem específico, como um carro ou uma casa </li>
+                <li class="list-style"><strong>Crédito consignado:</strong> Um empréstimo em que as parcelas são descontadas diretamente do contracheque </li>
+                <li class="list-style"><strong>Crédito do Trabalhador:</strong> Um empréstimo com juros mais baixos e prazo flexível para pagamento </li>
             </ul>
             <p>Para obter crédito, é preciso avaliar se o valor das parcelas cabe no orçamento. Quem já tem um relacionamento com a instituição financeira pode ter mais chances de ter o crédito aprovado. </p> 
             <p>Ao atrasar o pagamento do crédito, é preciso pagar juros de mora e multa. </p>
@@ -62,53 +62,111 @@
             <p><strong>J = (C * i * t) / 100</strong></p><!--Aqui podemos substituir por uma imgaem da fórmula assim como iremos fazer com o juros composto, para os dois ficarem iguais. Porque com imagem e o outro sem imagem ia ficar estranho-->        
         </div>
         <div>
-            <section>
+            <div>
+            <section class="JS">
                 <h2>Juros Simples</h2>
-                Capital:<input type="number" name="capital" id="capital" placeholder="Capital(C)">
-                Taxa:<input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
-                <select name="num" id="tipoTaxa">
-                    <option value="mes">ao mês</option>
-                    <option value="ano">ao ano</option>
-                </select>
-                Tempo:<input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
-                <select name="num" id="tipoTempo">
-                    <option value="mes">ao mês</option>
-                    <option value="ano">ao ano</option>
-                </select>
-                <input type="button" value="Calcular" onclick="Calcular()">
-                <div id="res">
+                <form onsubmit="Calcular()">
 
-                </div>
+                    <label for="capital">Capital:</label>
+                   <input type="number" name="capital" id="capital" placeholder="Capital(C)">
+
+                    <label for="taxa">Taxa:</label>
+                    <input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
+                    <select name="num" id="tipoTaxa">
+                        <option value="mes">ao mês</option>
+                        <option value="ano">ao ano</option>
+                    </select>
+
+                    <label for="tempo">Tempo:</label>  
+                    <input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
+                    <select name="num" id="tipoTempo">
+                        <option value="mes">ao mês</option>
+                        <option value="ano">ao ano</option>
+                    </select>
+
+                    <button type="submit">Calcular</button>
+
+                    <div id="res">
+                    
+                    </div>
+                </form>
             </section>
-        </div>
-        <div>
+            </div>
+            <div>
+            </section class='JC'>
             <h2>Juros Composto</h2>
             <p> juros compostos são calculados sobre o valor total + juros simples cobrados sobre ele. Quando você contrata algum serviço financeiro que tem a taxa de juros calculada por juros simples, é possível saber exatamente qual valor de juros vai pagar até o fim das parcelas definidas.</p>
             <h3>Cálculo Juros Composto</h3>
             <p><strong>M = C (1 + i)^t<!-- o termo "^" siginifica elevado --></strong></p>     
-            <p>Para descobrir o juros deve-se subtrair o valor da Capital(C) com o valor do MOntante(M)</p>     
+            <p>Para descobrir o juros deve-se subtrair o valor da Capital(C) com o valor do Montante(M)</p>     
         </div>     
         <div>
-            <section>
-                <h2>Juros compostos</h2>
-                Capital:<input type="number" name="num" id="capital2" placeholder="Capital(C)">
-                Taxa:<input type="number" name="num" id="taxa2" placeholder="Taxa(i)">
-                <select name="num" id="tipoTaxa2">
-                    <option value="mes2">ao mês</option>
-                    <option value="ano2">ao ano</option>
-                </select>
-                Tempo:<input type="number" name="num" id="tempo2" placeholder="Tempo(t)">
-                <select name="num" id="tipoTempo2">
-                    <option value="mes2">ao mês</option>
-                    <option value="ano2">ao ano</option>
-                </select>
-                <input type="button" value="Calcular" onclick="Composto()">
-                <div id="res2">
+            <section class="JC">
+                <form>
+                    <h2>Juros compostos</h2>
+                    <label for="capital2">Capital:</label>
+                    <input type="number" name="capital2" id="capital2" placeholder="Capital(C)">
 
-                </div>
+                    <label for="taxa2">Taxa:</label>
+                    <input type="number" name="taxa2" id="taxa2" placeholder="Taxa(i)">
+                    <select name="num" id="tipoTaxa2">
+                        <option value="mes2">ao mês</option>
+                        <option value="ano2">ao ano</option>
+                    </select>
+
+                    <label for="tempo2">Tempo:</label>
+                    <input type="number" name="tempo2" id="tempo2" placeholder="Tempo(t)">
+                    <select name="num" id="tipoTempo2">
+                        <option value="mes2">ao mês</option>
+                        <option value="ano2">ao ano</option>
+                    </select>
+
+                    <button type="submit" onclick="Composto()">Calcular</button>
+
+                    <div id="res2">
+
+                    </div>
+                </form>
             </section>
         </div>
     </main>
+        <footer id="rodape'">
+        <div class="footer-container">
+            <div class="footer-section"
+                <h3 class="contato-footer">Contato</h3>
+                <ul>
+                    <li>
+                        Felipe D.
+                    </li>
+                    <li>
+                        <a href="https://github.com/Henry-Fernandes" class="link-footer">Henry F.</a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/bernardcsilva" class="link-footer">Bernado C.</a>
+                    </li>
+                    <li>
+                        Francisco Z.
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-logo">
+                <img src="/imagens/title.png" alt="Logo Footer" class="footer-logo">
+            </div>
+            <div class="footer-section"
+                <h3 class="redes-sociais">Redes Sociais</h3>
+                <ul class="sociais">
+                    <li><a href=""><i class="fab fa-instagram">Bernardo C.</i></a></li>
+                    <li><a href=""><i class="fab fa-instagram">Henry F.</i></a></li>
+                    <li><a href=""><i class="fab fa-instagram">Felipe D.</i></a></li>
+                    <li><a href=""><i class="fab fa-instagram">Francisco Z.</i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; Site criado por Bernardo C., Henry F., Felipe D. e Francisco Z. para o projeto Hackaton. Todos os direitos reservados.</p>
+        </div>
+        <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" id="botao-cima">↑</button>
+    </footer>
     <script src="../scripts/juros.js"></script>
 </body>
 </html>

@@ -1,4 +1,7 @@
-function Calcular() {
+function Calcular(event) {
+
+    event.preventDefault()
+    
     let c = Number(document.getElementById("capital").value)
     let taxa = Number(document.getElementById("taxa").value)
     let t = Number(document.getElementById("tempo").value)
