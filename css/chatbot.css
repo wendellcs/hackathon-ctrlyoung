@@ -10,6 +10,7 @@ html, body {
   color: #F4C952;
   overflow: hidden;
 }
+
 #chatbot-container {
   display: flex;
   flex-direction: column;
@@ -19,16 +20,41 @@ html, body {
   border: none;
   box-shadow: none;
 }
+
 header {
   background: #f4c952d6;
+  user-select: none;
+  border: 2.5px solid #F4C952;
+}
+
+h1 {
+  margin: 0;
   color: #000;
   font-weight: 900;
-  font-size: 32px;
+  font-size: 26px;
   text-align: center;
   letter-spacing: 3px;
   text-transform: uppercase;
-  user-select: none;
-  border: 2.5px solid #F4C952;
+  padding: 20px 0;
+}
+
+#botao-voltar{
+  display: block;
+  background-color: #323432;
+  cursor: pointer;
+  color: #F4C952;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 24px;
+  transition: .3s;
+  transform: translateY(15px) translateX(25px);
+}
+
+#botao-voltar:hover {
+  background-color: #252725;
 }
 
 #chat-window {
@@ -41,17 +67,21 @@ header {
   scrollbar-width: thin;
   scrollbar-color: #F4C952 #2A2A28;
 }
+
 #chat-window::-webkit-scrollbar {
   width: 14px;
 }
+
 #chat-window::-webkit-scrollbar-thumb {
   background-color: #F4C952;
   border-radius: 10px;
   border: 4px solid #2A2A28;
 }
+
 #chat-window::-webkit-scrollbar-track {
   background: #2A2A28;
 }
+
 .message {
   max-width: 65%;
   padding: 20px 30px;
@@ -60,6 +90,7 @@ header {
   line-height: 1.6;
   box-shadow: 0 0 12px #F4C952;
 }
+
 .bot-message {
   background: #323432;
   color: #F4C952;
@@ -67,6 +98,7 @@ header {
   border-bottom-left-radius: 0;
   border: 2px solid #F4C952;
 }
+
 .user-message {
   background: #F4C952;
   color: #323432;
@@ -76,12 +108,14 @@ header {
   box-shadow: 0 0 18px #F4C952;
   border: 2px solid #323432;
 }
+
 #input-area {
   display: flex;
   padding: 30px 60px;
   border-top: 4px solid #F4C952;
   background: #2A2A28;
 }
+
 #user-input {
   flex: 1;
   border-radius: 40px;
@@ -95,12 +129,15 @@ header {
   font-weight: 700;
   transition: border-color 0.3s ease;
 }
+
 #user-input::placeholder {
   color: #F4C952;
 }
+
 #user-input:focus {
   border-color: #F4C952;
 }
+
 #send-btn {
   background: #F4C952;
   border: none;
@@ -115,26 +152,18 @@ header {
   box-shadow: 0 0 20px #F4C952;
   user-select: none;
 }
+
 #send-btn:hover:not(:disabled) {
   background: #F4C952;
   box-shadow: 0 0 30px #F4C952;
 }
+
 #send-btn:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-#botao-voltar{
-  display: block;
-  background-color: #323432;
-  color: #F4C952;
-  width: 50px;
-  height: 50px;
-  border: 0;
-  border-radius: 50%;
-  position: absolute;
-  font-size: 24px;
-  transform: translateY(65px) translateX(25px);
-}
+
+
 @media (max-width: 1024px) {
   #chat-window {
     padding: 30px 40px;
