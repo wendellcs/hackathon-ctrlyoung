@@ -316,3 +316,7 @@ document.getElementById('input-area').addEventListener('submit', enviarMensagem)
 
 iniciarChat()
 
+document.querySelector('#botao-voltar').addEventListener('click', () => {
+    window.open('', '_self', '');
+    window.close();
+})
