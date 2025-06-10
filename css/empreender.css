@@ -19,14 +19,15 @@ p{
 }
 
 .nav_bar{
-    background-color: #5B5B5B;
+    border: #F3C64A 1px solid;
     border-radius: 12px;
-    box-shadow: 0px 3px 7px rgb(34, 34, 34);
-    padding: 10px 15px;
+    padding: 5px 10px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 580px;
 }
+
 
 .menu-toggle{
     font-size: 26px;
