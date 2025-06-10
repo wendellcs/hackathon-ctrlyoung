@@ -8,7 +8,6 @@ section .caixa {
     margin-bottom: 10px;
 }
 
-<<<<<<< HEAD
 body{
     background-color: #2f2f2f;
     color: black;
@@ -27,15 +26,6 @@ p{
     font-size: 14px;
 }
 
-.nav_bar{
-    background-color: #5B5B5B;
-    border-radius: 12px;
-    box-shadow: 0px 3px 7px rgb(34, 34, 34);
-    padding: 10px 15px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
 .menu-toggle{
     font-size: 26px;
@@ -485,17 +475,7 @@ footer > ul > li {
         top: 50px;
         left: 0;
       }
-=======
-.caixa input {
-    width: 250px;
-    height: 40px;
-    background-color: rgba(0, 0, 0, 0.496);
-    color: #FFF;
-    border-radius: 12px;
-    border: 1px solid #F3C64A;
-    padding-left: 5px;
-}
->>>>>>> 1ed7d8ba92e6e05a745c0764b7a0d4036e2315a1
+ }
 
 .caixa select {
     height: 40px;
