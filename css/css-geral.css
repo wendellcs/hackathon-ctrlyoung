@@ -25,8 +25,7 @@ body{
 
 .nav_bar a:hover {
     color: #F3C64A;
-    font-size: 17px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menu-toggle{
