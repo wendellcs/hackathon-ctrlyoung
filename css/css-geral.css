@@ -146,8 +146,6 @@ ul:not(.links-yt) {
     margin: 0 auto;
     background-color: #393939;
     padding: 50px;
-
-    
 }
 
 .banner {
@@ -175,6 +173,7 @@ ul:not(.links-yt) {
     font-size: 18px;
     margin-bottom: 30px;
     margin-top: 30px;
+    color: #F3C64A;
 }
 
 
@@ -182,6 +181,7 @@ ul:not(.links-yt) {
     font-size: 14px;
     line-height: 140%;
     color: #fff;
+    margin: 20px 0;
 }
 
 #rodape{
