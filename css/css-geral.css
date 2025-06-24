@@ -312,6 +312,10 @@ footer > ul > li {
     color: #F3C64A 
 }
 
+.banner-paginas {
+    width: 100%;
+    border-radius: 12px;
+}
 
 #botao-cima {
     padding: 10px 20px;
