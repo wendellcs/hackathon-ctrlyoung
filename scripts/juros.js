@@ -1,8 +1,8 @@
 document.querySelector('.calcular-juros-simples').addEventListener('click', (e) => {
-    calcular(e)
+    simples(e)
 })
 
-function calcular(event) {
+function simples(event) {
 
    event.preventDefault()
     

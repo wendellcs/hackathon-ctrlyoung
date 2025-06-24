@@ -351,9 +351,28 @@ footer > ul > li {
     cursor: pointer;
 }
 
+/* Responsivo geral */
+
+@media (max-width: 550px) {
+    #menu {
+       padding: 10px 20px; 
+    }
+
+    #conteudo-principal{
+        margin: 0;
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+}
+
+@media (max-width: 335px) {
+    #conteudo-principal{
+        padding: 30px 10px;
+    }
+}
 
 /* Responsivo Menu Mobile */
-
 @media (max-width: 850px) {
     .nav_bar {
         display: none;
@@ -367,3 +386,22 @@ footer > ul > li {
         display: block;
     }
 }
+
+/* Responsivo Footer */
+@media (max-width: 1000px) {
+    .footer-container {
+        display: block;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        width: 250px;
+        height: 200px;
+    }
+
+    #botao-cima {
+        margin: 0 auto;
+    }
+}
+
+
