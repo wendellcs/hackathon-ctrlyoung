@@ -11,3 +11,11 @@ menuToggle.addEventListener('click', () => {
     mobileMenu.style.display = 'block'
 });
 
+const abrirDropdown = document.querySelector('.abrir-dropdown')
+const conteinerDropdown = document.querySelector('.conteiner-dropdown')
+const iconeDropdown = document.querySelector('.icone-dropdown')
+
+abrirDropdown.addEventListener('click', () => {
+  conteinerDropdown.classList.toggle('esconder')
+  iconeDropdown.classList.toggle('rodar')
+})

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/css-geral.css">
     <link rel="stylesheet" href="../css/crede.css">
-    <title>Créditos e Dívidas</title>
+    <link rel="shortcut icon" href="../imagens/favicon.jpg" type="image/x-icon">
+    <title>MONEE-f | Créditos e Dívidas</title>
 </head>
 <body>
     <header id="menu">
@@ -13,11 +14,19 @@
         <nav class="nav_bar">
             <ul class="header-links">
                 <li><a href="../index.html" class="header-link-mobile">Home</a></li>
-                <li><a href="./investimentos.html" class="header-link-mobile">Investimentos</a></li>
-                <li><a href="#" class="header-link-mobile">Créditos e Dívidas</a></li>
-                <li><a href="./jovens.html" class="header-link-mobile">Jovens</a></li>
-                <li><a href="./futuro.html" class="header-link-mobile">Futuro</a></li>
-                <li><a href="./empreender.html" class="header-link-mobile">Empreendedorismo</a></li>
+                
+                <li class="li-dropwdown">
+                    <a href="#" class="header-link abrir-dropdown">Mais <span> <svg class="icone-dropdown" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M12.7071 14.7071C12.3166 15.0976 11.6834 15.0976 11.2929 14.7071L6.29289 9.70711C5.90237 9.31658 5.90237 8.68342 6.29289 8.29289C6.68342 7.90237 7.31658 7.90237 7.70711 8.29289L12 12.5858L16.2929 8.29289C16.6834 7.90237 17.3166 7.90237 17.7071 8.29289C18.0976 8.68342 18.0976 9.31658 17.7071 9.70711L12.7071 14.7071Z" fill="#F3C64A"></path> </g></svg></span></a>
+                    <div class="conteiner-dropdown esconder">
+                        <ul class="dropdown">
+                            <li><a href="./investimentos.html" class="header-link" >Investimentos</a></li>
+                            <li><a href="./crede.html" class="header-link" >Créditos e Dívidas</a></li>
+                            <li><a href="./jovens.html" class="header-link" >Jovens</a></li>
+                            <li><a href="./futuro.html" class="header-link" >Futuro</a></li>
+                            <li><a href="./empreender.html" class="header-link" >Empreendedorismo</a></li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
         </nav>
 
@@ -72,15 +81,15 @@
                     <label for="taxa">Taxa:</label>
                     <input type="number" name="taxa" id="taxa" placeholder="Taxa(i)">
                     <select name="num" id="tipoTaxa">
-                        <option value="mes">ao mês</option>
-                        <option value="ano">ao ano</option>
+                        <option value="mes">Ao mês</option>
+                        <option value="ano">Ao ano</option>
                     </select>
 
                     <label for="tempo">Tempo:</label>  
                     <input type="number" name="tempo" id="tempo" placeholder="Tempo(t)">
                     <select name="num" id="tipoTempo">
-                        <option value="mes">ao mês</option>
-                        <option value="ano">ao ano</option>
+                        <option value="mes">Meses</option>
+                        <option value="ano">Anos</option>
                     </select>
 
                     <button class="calcular-juros-simples">Calcular</button>
@@ -109,18 +118,18 @@
                     <label for="taxa2">Taxa:</label>
                     <input type="number" name="taxa2" id="taxa2" placeholder="Taxa(i)">
                     <select name="num" id="tipoTaxa2">
-                        <option value="mes2">ao mês</option>
-                        <option value="ano2">ao ano</option>
+                        <option value="mes2">Ao mês</option>
+                        <option value="ano2">Ao ano</option>
                     </select>
 
                     <label for="tempo2">Tempo:</label>
                     <input type="number" name="tempo2" id="tempo2" placeholder="Tempo(t)">
                     <select name="num" id="tipoTempo2">
-                        <option value="mes2">ao mês</option>
-                        <option value="ano2">ao ano</option>
+                        <option value="mes2">Meses</option>
+                        <option value="ano2">Anos</option>
                     </select>
 
-                    <button type="submit" onclick="Composto()">Calcular</button>
+                    <button class="calcular-juros-compostos">Calcular</button>
 
                     <div id="res2">
 

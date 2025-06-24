@@ -1,6 +1,7 @@
 document.querySelector('.calcular-juros-simples').addEventListener('click', (e) => {
     calcular(e)
 })
+
 function calcular(event) {
 
    event.preventDefault()
@@ -29,7 +30,13 @@ function calcular(event) {
     }
 }
 
-function Composto() {
+document.querySelector('.calcular-juros-compostos').addEventListener('click' , (e) => {
+    composto(e)
+})
+
+function composto(event) {
+    event.preventDefault()
+
     let c2 = Number(document.getElementById("capital2").value)
     let taxa2 = Number(document.getElementById("taxa2").value)
     let t2 = Number(document.getElementById("tempo2").value)

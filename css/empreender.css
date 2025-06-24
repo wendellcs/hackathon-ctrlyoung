@@ -2,11 +2,6 @@ strong {
     color: #F3C64A;
 }
 
-li{
-    list-style: none;
-    padding: 5px;
-}
-
 .list-style {
     list-style-type: disc;
     list-style-position: inside;
