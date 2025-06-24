@@ -1,6 +1,9 @@
-function Calcular(event) {
+document.querySelector('.calcular-juros-simples').addEventListener('click', (e) => {
+    calcular(e)
+})
+function calcular(event) {
 
-    event.preventDefault()
+   event.preventDefault()
     
     let c = Number(document.getElementById("capital").value)
     let taxa = Number(document.getElementById("taxa").value)

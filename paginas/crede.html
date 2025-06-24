@@ -12,12 +12,12 @@
         <img src="../imagens/moneef logo.png" alt="logo da barra de nav" class="nav_logo" height="50px"/>
         <nav class="nav_bar">
             <ul class="header-links">
-                <li><a href="index.html" class="header-link-mobile">Home</a></li>
-                <li><a href="./paginas/investimentos.html" class="header-link-mobile">Investimentos</a></li>
-                <li><a href="./paginas/crede.html" class="header-link-mobile">Créditos e Dívidas</a></li>
-                <li><a href="./paginas/jovens.html" class="header-link-mobile">Jovens</a></li>
-                <li><a href="./paginas/futuro.html" class="header-link-mobile">Futuro</a></li>
-                <li><a href="./paginas/empreender.html" class="header-link-mobile">Empreendedorismo</a></li>
+                <li><a href="../index.html" class="header-link-mobile">Home</a></li>
+                <li><a href="./investimentos.html" class="header-link-mobile">Investimentos</a></li>
+                <li><a href="#" class="header-link-mobile">Créditos e Dívidas</a></li>
+                <li><a href="./jovens.html" class="header-link-mobile">Jovens</a></li>
+                <li><a href="./futuro.html" class="header-link-mobile">Futuro</a></li>
+                <li><a href="./empreender.html" class="header-link-mobile">Empreendedorismo</a></li>
             </ul>
         </nav>
 
@@ -30,7 +30,7 @@
             <ul class="header-links-mobile">
                 <li><a href="../index.html" class="header-link-mobile">Home</a></li>
                 <li><a href="./investimentos.html" class="header-link-mobile">Investimentos</a></li>
-                <li><a href="./crede.html" class="header-link-mobile">Créditos e Dívidas</a></li>
+                <li><a href="#" class="header-link-mobile">Créditos e Dívidas</a></li>
                 <li><a href="./jovens.html" class="header-link-mobile">Jovens</a></li>
                 <li><a href="./futuro.html" class="header-link-mobile">Futuro</a></li>
                 <li><a href="./empreender.html" class="header-link-mobile">Empreendedorismo</a></li>
@@ -64,7 +64,7 @@
             <div>
             <section class="JS">
                 <h2>Juros Simples</h2>
-                <form onsubmit="Calcular()">
+                <form>
 
                     <label for="capital">Capital:</label>
                    <input type="number" name="capital" id="capital" placeholder="Capital(C)">
@@ -83,7 +83,7 @@
                         <option value="ano">ao ano</option>
                     </select>
 
-                    <button type="submit">Calcular</button>
+                    <button class="calcular-juros-simples">Calcular</button>
 
                     <div id="res">
                     
@@ -155,5 +155,6 @@
     </footer>
 
     <script src="../scripts/retrato.js"></script>
+    <script src="../scripts/juros.js"></script>
 </body>
 </html>
