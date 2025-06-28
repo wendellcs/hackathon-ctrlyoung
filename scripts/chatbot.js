@@ -262,15 +262,15 @@ const dados = [
 ]
 
 
-const janelaDeChat = document.getElementById('chat-window')
-const textoDoUsuario = document.getElementById('user-input')
-const botaoDeEnvio = document.getElementById('send-btn')
+const janelaDeChat = document.getElementById('janela-chat')
+const textoDoUsuario = document.getElementById('input-usuario')
+const botaoDeEnvio = document.getElementById('btn-enviar')
 
 const respostaPadrao = 'Posso te ajudar com várias dicas sobre finanças, investimentos, dívidas, orçamento, planejamento e muito mais. Me pergunte!'
 
 function criarMensagem(texto, sender = 'bot') {
   const msg = document.createElement('div')
-  msg.classList.add('message')
+  msg.classList.add('mensagem')
   msg.classList.add(sender === 'bot' ? 'mensagem-do-bot' : 'mensagem-do-usuario')
   msg.textContent = texto
   
